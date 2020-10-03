@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>Kill The Devil!</title>
+		<script type="text/javascript" src="../jquery.min.js"></script>
+		<style type="text/css">
+		body{
+			position:relative;
+			margin:0px;
+			cursor:url('cursor.cur'),auto;
+		}
+		
+		#decoration{ text-align:center;
+					 background-color:#bcbcbc;
+					}
+		
+		#devil{
+			height:150px;
+			width:150px;
+			position:relative;
+			display:none;
+		}
+		
+		</style>
+	
+	</head>
+
+
+	<body>
+		
+		<div id="decoration">
+			<h1 style="font-size:50px;padding-bottom:-60px;">Kill The Devil!</h1>
+			<h2>How Fast Can You Kill The Devil</h2>
+		</div>
+		<div id="result">
+			<h3>You Killed him in :- <span id="timetaken"></span></h3>
+		</div>
+		
+		<div>
+			<img id="devil" src="devil.png">
+		</div>
+	
+		<script>
+			var end;
+			function changing(){
+				var size=0;
+				size=Math.floor((Math.random()*400)+100);
+				var left=Math.floor((Math.random()*750)+50);
+				var top=Math.floor((Math.random()*100)+50);
+				$("#devil").height(size);
+				$("#devil").css('left',left);
+				$("#devil").css('top',top);
+				$("#devil").css('display','block');
+				
+				start=new Date().getTime();
+			}
+			
+			function display(){setTimeout(changing,1000)}
+				
+				
+				display();
+				$("#devil").click(function(){
+					var end= new Date().getTime();
+					$("#devil").css('display','none');
+					var time=(end-start)/1000;
+					$("#timetaken").html(time +" seconds");
+					display();
+				});
+
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,36 @@
+
+		body
+		{
+		margin:0px;
+		}
+		
+		#box
+		{
+			width:100%;
+			height:100%;
+			background-color:black;
+			position:relative;
+			
+		}
+		#top
+		{
+			color:#04ff00;
+			font-size:80px;
+			text-align:center;
+			position:relative;
+			top:250px;
+		}
+		#top:hover{cursor:pointer;}
+		#list
+		{
+			display:none;
+			color:#99ff8c;
+			font-size:30px;
+			margin-left:200px;
+			margin-top:70px;
+		}
+		#description
+		{
+			color:#bcbcbc;
+			font-size:20px;
+		}

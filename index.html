@@ -1,0 +1,51 @@
+<html>
+
+	<head>
+		<title>Simple Games</title>
+		<link rel="stylesheet" type="text/css" href="style/form.css" >
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="box">
+		
+			<p id="top">Select A Game</p>
+			<div id="list">
+				Game 1 :
+					<span>Kill The Devil !</span>
+				<p id="description">
+					A Very Basic HTML Game Created Using JavaScript & jQuery By Kshitij Nirupam.
+				</p>
+				<p>
+					&nbsp &nbsp &nbsp
+					<a href="ktd/ktd.html">Play</a> 
+					&nbsp &nbsp &nbsp 
+					<span>
+						<a href="ktd/ktd_dark.html">Play in Dark Mode</a>
+					</span>
+				</p>
+					<hr>
+					More Games Are Coming Soon...
+					<p id="description">
+						(You Can Also Contribute Your Creation)
+					</p>
+			</div>	
+			
+		</div>
+		
+	<script type="text/javascript">
+					$("#top").click(function(){
+					$("#top").animate({
+						top:'10px',
+						opacity:'0.5',
+						},"slow",function(){
+						$("#list").slideToggle("slow");
+					});
+					});
+					
+	</script>
+	
+	
+	</body>
+
+</html>
