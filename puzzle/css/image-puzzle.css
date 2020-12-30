@@ -1,0 +1,89 @@
+﻿body {
+  height: 100%;
+  width:100%;
+  background-color:#8395ef;
+}
+
+#collage {
+	height:100%;
+	width:100%;
+	margin-top:auto;
+}
+
+
+#playPanel {
+    background-color:#8395ef;
+    width:100%;
+	height:100%;
+	align:center;
+	
+}
+
+ #actualImageBox {
+    display: inline-block;
+    font-size:0.8em;
+    margin-left:10%;
+	margin-top:4%;
+    vertical-align: top;
+    width:50%;
+}
+
+ #stepBox, #timeBox {
+    display:inline-block;
+    width:40%;
+	font-size:25px;
+	font-style: bold;
+	color:#041670;
+}
+
+ #stepBox div {
+    background-color:#8395ef;
+    display:inline-block;
+    padding:15px 4px;
+    margin: 0px 0px;
+    max-width:80%;
+}
+
+ img#actualImage{
+    border:4px solid #041670;
+    height:50%;
+    width:50%;
+}
+
+#sortable {
+    border:5px dashed #041670;
+    list-style-type: none;
+    display: inline-block;
+	margin:100px;
+    padding: 0;
+    width: 400px;
+	
+}
+
+ #sortable li {
+        background-size: 400% 400%;
+        border: none;
+        cursor: pointer;
+        margin: 0%;
+        padding: 0%;
+        float: left;
+        width: 100px;
+		height:100px;
+        
+    }
+
+	button  {
+    background-color:#f5f2f2;
+    border:1px solid #cce;
+    display: inline;
+    font-size: 14px;
+    height: 10%;
+    width: 25%;
+    padding: 3px 8px;
+	margin-left:3%;
+}
+
+
+input{
+	margin-left:10%;
+}
